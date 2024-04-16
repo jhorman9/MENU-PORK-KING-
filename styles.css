@@ -1,0 +1,300 @@
+:root{
+    --yellow: #d1a646;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scrollbar-color: var(--yellow) black;
+}
+
+
+body{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #000;
+    color: white;
+    font-optical-sizing: auto;
+    font-weight: 400; /* Puedes cambiar este valor entre 200 y 1000 */
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+/*---  HEADER  ---*/
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+header img{
+    width: 175px;
+}
+
+/*---  END HEADER  ---*/
+
+/*---  ----------  ---*/
+
+/*---  MAIN  ---*/
+
+main{
+    max-width: 1400px;
+    margin: auto;
+    padding: 35px;
+}
+
+@media (max-width: 575px) {
+    main{
+        padding: 14px;
+    }
+}
+
+h1{
+    text-align: center;
+    font-size: 36px;
+}
+
+.title__border{
+    border: 2px solid var(--yellow);
+    padding: 14px 35px;
+    margin-top: 35px;
+}
+
+@media (max-width: 575px) {
+    .title__border{
+        padding: 14px;
+    }
+}
+
+.title__border h2{
+    text-align: center;
+    margin: auto;
+    margin-top: -33px;
+    background-color: black;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 28px;
+}
+
+.product__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 1199px) {
+    .product__item{
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .product__item:last-child{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .product__item{
+        border-bottom: 1px solid var(--yellow);
+        padding-bottom: 20px;
+    }
+}
+
+.product__item:first-child, .product__item:last-child{
+    margin-bottom: 0;
+}
+
+.product__image__text{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+@media (max-width: 1199px) {
+    .product__image__text{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1199px) {
+    .product__text p{
+        margin-top: 7px;
+        margin-bottom: 0;
+    }
+}
+
+.product__item .product__image__text img{
+    width: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section__separated{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+@media (max-width: 1199px) {
+    .section__separated{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*---  END MAIN ---*/
+
+/*---  ----------  ---*/
+
+/*---  FOOTER ---*/
+
+footer{
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 35px 35px 35px;
+}
+
+@media (max-width: 575px) {
+    footer{
+        padding: 14px 14px 35px 14px;
+    }
+}
+
+footer .title__border{
+    margin-top: 10px;
+}
+
+/*---  END FOOTER ---*/
+
+/*---  UTILS  ---*/
+
+.color-yellow{
+    color: var(--yellow);
+}
+
+.color-yellow.product__text{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.color-yellow.product__price{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.kalam-regular {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .kalam-bold {
+    font-family: "Kalam", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/*---  END UTILS  ---*/
+
+/*--- SOCIAL ---*/
+
+.social-float {
+    position: fixed;
+    right: 0;
+    top: calc(50% - 240px);
+    z-index: 1000;
+}
+.social-float_inner {
+    padding: 12px;
+    transition: .3s ease all;
+}
+.social-float_inner ul.list-unstyled {
+    margin: 0;
+}
+.ico-float {
+    color: #000;
+    text-align: center;
+    padding: 6px 5px 5px 5px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease all;
+}
+
+.social-float_inner ul li {
+    padding-bottom: 6px;
+    transition: 0.3s ease all;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.social-float_inner ul li:hover {
+    transition: 0.3s ease all;
+    background: var(--yellow);
+}
+.social-float_inner ul li:hover a {
+    filter: invert(1);
+    transition: .3s ease all;
+}
+.social-float_inner ul li:hover{
+    transition: .3s ease all;
+  transform: translateY(-3px);
+}
+
+div#close-btn img {
+    background: var(--yellow);
+    width: 35px;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 0 0px 5px;
+}
+div#close-btn {
+    display: flex;
+    justify-content: end;
+}
+.social-float_inner span {
+    display: block;
+}
+.social-float_inner a {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    padding: 0 5px;
+    letter-spacing: -0.5px;
+    color: #000;
+}
+
+.texto-denuncias-sucursales {
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+.texto-denuncias-sucursales a {
+    color: var(--yellow);
+}
+
+.texto-denuncias-sucursales_listas {
+    color: #18365e;
+    font-weight: 600;
+}
+
+.texto-denuncias-sucursales_listas .porto-just-icon-wrapper.porto-icon.none {
+    margin-bottom: 0;
+}
