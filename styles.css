@@ -134,10 +134,16 @@ h1{
 }
 
 .product__item .product__image__text img{
-    width: 125px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 757px) {
+    .product__item .product__image__text img{
+        width: 100%;
+    }
 }
 
 .section__separated{
