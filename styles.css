@@ -152,6 +152,12 @@ h1{
     }
 }
 
+@media (max-width: 1199px) {
+    .cell-hide{
+        display: none;
+    }
+}
+
 /*---  END MAIN ---*/
 
 /*---  ----------  ---*/
