@@ -249,7 +249,6 @@ footer .title__border{
 }
 
 .social-float_inner ul li {
-    padding-bottom: 6px;
     transition: 0.3s ease all;
     background: #fff;
     display: flex;
@@ -259,14 +258,22 @@ footer .title__border{
     margin-bottom: 5px;
     border-radius: 5px;
     box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.2);
+    padding: 3px;
 }
+
+.social-float_inner ul li a img{
+    width: 50px;
+}
+
 .social-float_inner ul li:hover {
     transition: 0.3s ease all;
     background: var(--yellow);
 }
 .social-float_inner ul li:hover a {
-    filter: invert(1);
     transition: .3s ease all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .social-float_inner ul li:hover{
     transition: .3s ease all;
