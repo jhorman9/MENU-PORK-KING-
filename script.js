@@ -7,7 +7,6 @@ const containerForeing = document.querySelectorAll(".cat-extranjero");
 const containerNational = document.querySelectorAll(".cat-nacionales");
 
 const link = window.location.hostname;
-console.log(link);
 
 closeBtnImg.setAttribute("title", "Cerrar");
 closeBtn.addEventListener("click", () => {
